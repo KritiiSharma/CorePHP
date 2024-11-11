@@ -1,0 +1,26 @@
+<!-- database == kriti -->
+
+CREATE TABLE images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    file_name VARCHAR(255) NOT NULL,
+    uploaded_on DATETIME NOT NULL
+);
+
+
+
+
+CREATE TABLE form_data (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    website VARCHAR(255),
+    comment TEXT,
+    gender ENUM('female', 'male', 'other') NOT NULL,
+    dropdown VARCHAR(50) NOT NULL,
+    terms BOOLEAN NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
